@@ -1,0 +1,106 @@
+@import "../mixins.scss";
+
+
+@include respond(phone){
+    #navbar-brand{
+        // border: 3px solid;
+        // text-align: center;
+        @include centerText();
+    }
+#navbar-brand-icon{
+    font-size: 42px;
+    
+   
+}
+
+.toBeColapsed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // border:3px solid;
+    margin-top: 3%;
+    background-color: #DFDFDE;
+    width:100%;
+    #nav-link{
+        
+        color:black;
+        font-size : 15px;
+        // padding: 2%;
+        
+    }
+}
+}
+
+@include respond(tab-potrait){
+    #navbar-brand{
+        @include centerText();
+
+    }
+    #navbar-brand-icon{
+        font-size: 50px;
+
+    }
+    .toBeColapsed{
+        @include displayFlex();
+        background-color: #DFDFDE;
+        #nav-link{
+            color: black;
+            font-size: 20px;
+            // padding:3%;
+        }
+
+    }
+
+}
+@include respond(tab-landscape){
+    #navbar-brand{
+        @include centerText();
+
+    }
+    #navbar-brand-icon{
+        font-size:58px ;
+    }
+    .toBeColapsed{
+        @include displayFlex();
+        background-color: #DFDFDE;
+        margin-top: 3%;
+        #nav-link{
+            color:black;
+            font-size: 22px;
+            // padding: 5%;
+            // border :1px dotted;
+            // margin-top: 3px;
+        }
+        
+    }
+}
+
+@include respond(laptop){
+    #navbar-brand-icon{
+        font-size: 87px;
+    }
+    .toBeColapsed{
+        @include displayFlex();
+        @include margin-left(73%);
+        #nav-link{
+            color:black;
+            font-size: 15px;
+            
+
+        }
+    }
+}
+
+@include respond(desktop){
+    #navbar-brand-icon{
+        font-size: 90px;
+    }
+    .toBeColapsed{
+        @include displayFlex();
+        @include margin-left(80%);
+        #nav-link{
+            color:black;
+            font-size:18px;
+        }
+    }
+}

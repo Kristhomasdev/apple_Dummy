@@ -1,0 +1,32 @@
+@import "../mixins.scss";
+
+@include respond(phone){
+    .figure-image{
+        filter:blur(3px); 
+    }
+}  
+@include respond(tab-potrait){
+    .figure-image{
+        filter: blur(3px);
+    }
+}
+@include respond(tab-landscape){
+    .figure-image{
+        filter: blur(3px);
+    }
+}
+@include respond(laptop){
+    .figure-image{
+        filter: blur(3px);
+        height: 800px;
+        width: 90%;
+        // border:3px solid;
+    }
+}
+
+
+@include respond(desktop){
+    .figure-image{
+        filter: blur(3px);
+    }
+}
