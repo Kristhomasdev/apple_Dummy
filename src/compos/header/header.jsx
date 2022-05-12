@@ -25,14 +25,14 @@ return (
     
     <Nav id="" class="toBeColapsed">
     
-        <Nav.Link id="nav-link">RODUCTS</Nav.Link>
-        <Nav.Link id="nav-link">RICES</Nav.Link>
-        <Nav.Link id="nav-link">EXAME</Nav.Link>
+        <Nav.Link id="nav-link">Legacy</Nav.Link>
+        <Nav.Link id="nav-link">Prices</Nav.Link>
+        <Nav.Link id="nav-link">Products</Nav.Link>
         <NavDropdown id="nav-link" title={<AppleIcon/>}>
-            <NavDropdown.Item>ACTION #</NavDropdown.Item>
-            <NavDropdown.Item>ACTION #</NavDropdown.Item>
+            <NavDropdown.Item>I-Phone</NavDropdown.Item>
+            <NavDropdown.Item>I-Pad</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item>ACTION #</NavDropdown.Item>
+            <NavDropdown.Item>Mac Book Pro</NavDropdown.Item>
         </NavDropdown>
     
     </Nav>
