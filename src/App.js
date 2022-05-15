@@ -9,6 +9,7 @@ import { f179} from "@fortawesome/free-solid-svg-icons";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Carrousel from "./compos/carousel/Carousel";
+import FigForLala from "./compos/lalaImage/figure";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
     <Header/> 
     <Carrousel/>
+    <FigForLala />
       
     </div>
   );
